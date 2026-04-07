@@ -1,9 +1,70 @@
 html, body {
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    background-color: rgb(3, 5, 1);
+    color: #cccccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    /* width: 100%;
+    */height: 100vh;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    align-content: center;
+    overflow-y: none;
 }
 
 h1 {
-    background-color: rgb(114, 44, 3);
+    background-color: rgb(14, 13, 13);
+    padding: 0 0.5rem;
 }
 
+.card-container {
+    width: 30rem;
+    height: 25rem;
+    background-color: rgb(3, 5, 1);
+
+    border-radius: 2%;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 25px #1e1f22;
+
+}
+
+.program-list {
+    
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    list-style: none; 
+    padding: 0; 
+}
+
+.card { 
+    background-color: rgb(3, 5, 1); 
+    border-radius: 15px; 
+    padding: 30px; 
+    width: 200px; 
+    box-shadow: 0 10px 20px rgba(95, 89, 89, 0.1); 
+    transition: transform 0.3s ease;
+    border-top: 5px solid #278eae;
+}
+
+.card:hover { transform: translateY(-5px); }
+.card h2 { color: #278eae; margin-top: 0; }
+.card p { font-size: 0.9rem; color: #666; }
+.btn { 
+    display: inline-block; 
+    margin-top: 15px; 
+    padding: 10px 20px; 
+    background: #278eae; 
+    color: #cccccc; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
